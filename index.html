@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <body>
+      <header class="sticky top-0 z-10 w-[100%] bg-[#0089b7] p-2 text-white">
+        <nav class="mx-auto flex w-[80vw] justify-between align-middle">
+          <div class="">
+            <h1 class="text-3xl max-sm:text-lg">Portfolio</h1>
+          </div>
+          <div>
+            <ul class="flex gap-3 text-xl max-sm:hidden">
+              <li class="forli"><a href="#hero">Home</a></li>
+              <li class="forli"><a href="#projects">Project</a></li>
+              <li class="forli"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hidden max-sm:block">
+              <i id="drawer" class="fa-solid fa-bars fa-lg"></i>
+            </div>
+          </div>
+        </nav>
+        <ul
+          id="place"
+          class="absolute right-10 flex hidden flex-col items-center justify-center gap-3 bg-[#003d62] p-1 text-xl"
+        >
+          <li onclick="collapse()" class="forli"><a href="#hero">Home</a></li>
+          <li onclick="collapse()" class="forli">
+            <a href="#projects">Project</a>
+          </li>
+          <li onclick="collapse()" class="forli">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </header>
+      <section
+        id="hero"
+        class="scroll-m-8 border-b-8 border-b-[#0089b7] bg-[#003d62] text-white"
+      >
+        <div class="mx-auto flex max-w-[900px] gap-4 py-10 max-md:flex-col">
+          <div class="flex items-center justify-center">
+            <!-- class="w-[300px]"  mx-auto h-full w-[250px] rounded-full object-fill -->
+            <img
+              class="animate__bounceInLeft animate__animated rounded-full max-sm:w-[200px]"
+              src="../images/my_profile_photo (1).jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="mx-auto flex w-full flex-col items-center justify-center gap-10 text-4xl max-sm:text-xl"
+          >
+            <p class="">
+              <span class="text-yellow-400">Hi</span>,
+              <span class="text-3xl max-sm:text-lg">I am </span>Harshit Thakur
+            </p>
+            <p
+              class="w-fit animate-typing overflow-hidden whitespace-nowrap border-r-4 font-bold max-sm:w-[200px]"
+            >
+              Frontend Developer.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#003d62] pb-10 text-white">
+        <div class="mx-auto max-w-[1300px] py-5">
+          <h1 class="mb-4 text-center text-4xl">PROJECTS</h1>
+          <div
+            id="projects"
+            class="grid scroll-m-28 grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-20 max-sm:gap-5"
+          ></div>
+        </div>
+      </section>
+      <section id="contact" class="w-[100%] bg-[#003251] py-[4rem]">
+        <div
+          class="mx-auto flex max-w-[900px] flex-col items-center justify-center gap-[3rem] py-12 text-5xl text-white max-sm:gap-4 max-sm:py-0 max-sm:text-lg"
+        >
+          <h1 class="text-center">Let's work together...</h1>
+          <ul class="flex gap-6">
+            <li class="">
+              <a href="https://www.linkedin.com/in/harshit-thakur-11956214b"
+                ><i class="fa-brands fa-linkedin fa-lg"></i> LinkedIn</a
+              >
+            </li>
+            <li class="">
+              <a href=""><i class="fa-brands fa-twitter fa-lg"></i> Twitter</a>
+            </li>
+            <li class="">
+              <a href="mailto:thakurharshit022@gmail.com"
+                ><i class="fa-solid fa-envelope fa-lg"></i> Gmail</a
+              >
+            </li>
+          </ul>
+          <ul class="flex gap-6">
+            <li class="">
+              <a href="https://github.com/thakur-afk"
+                ><i class="fa-brands fa-github fa-lg"></i> Github</a
+              >
+            </li>
+            <li class="">
+              <a href=""><i class="fa-solid fa-phone"></i> Phone</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="bg-[#003d62] p-5">
+        <h1 class="text-center text-white">@Harshit Thakur</h1>
+      </footer>
+      <script type="module" src="/main.js"></script>
+    </body>
+   
+
+</html>

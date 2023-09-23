@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+  .forli{
+      @apply
+       border-b-2 border-transparent hover:border-yellow-400
+      
+  }
+}
